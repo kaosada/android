@@ -11,9 +11,6 @@
   <default revision="gingerbread"
            remote="github" />
 
-  <remote  name="caf"
-	   fetch="git://codeaurora.org/" />
-
   <project path="build" name="CyanogenMod/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -239,7 +236,7 @@
   <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" />
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" />
-  <project path="hardware/ril" name="platform/hardware/ril" remote="caf" revision="494997c13f79f3438ea733704a8f3a37bab553a4" />
+  <project path="hardware/ril" name="kghost/android_hardware_ril" />
   <project path="hardware/alsa_sound" name="CyanogenMod/android_hardware_alsa_sound" />
   <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" />
   <project path="hardware/ti/omap3-compat" name="CyanogenMod/android_hardware_ti_omap3-compat" />
