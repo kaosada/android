@@ -5,11 +5,14 @@
            review="review.source.android.com" />
 
   <remote  name="github"
-           fetch=".."
+	   fetch="git://github.com/"
            review="review.cyanogenmod.com" />
 
   <default revision="gingerbread"
            remote="github" />
+
+  <remote  name="caf"
+	   fetch="git://codeaurora.org/" />
 
   <project path="build" name="CyanogenMod/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -124,6 +127,7 @@
   <project path="device/semc/zeus-common" name="CyanogenMod/android_device_semc_zeus-common" />
   <project path="device/zte/blade" name="CyanogenMod/android_device_zte_blade" />
   <project path="device/zte/v9" name="CyanogenMod/android_device_zte_v9" />
+  <project path="device/hisense/e910" name="kghost/android_device_hisense_e910" />
   <project path="external/alsa-lib" name="CyanogenMod/android_external_alsa-lib" />
   <project path="external/alsa-utils" name="CyanogenMod/android_external_alsa-utils" />
   <project path="external/apache-http" name="CyanogenMod/android_external_apache-http" />
@@ -235,7 +239,7 @@
   <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" />
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" />
-  <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" />
+  <project path="hardware/ril" name="platform/hardware/ril" remote="caf" revision="494997c13f79f3438ea733704a8f3a37bab553a4" />
   <project path="hardware/alsa_sound" name="CyanogenMod/android_hardware_alsa_sound" />
   <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" />
   <project path="hardware/ti/omap3-compat" name="CyanogenMod/android_hardware_ti_omap3-compat" />
@@ -318,7 +322,7 @@
   <project path="system/vold" name="CyanogenMod/android_system_vold" />
   <project path="system/wlan/ti" name="CyanogenMod/android_system_wlan_ti" />
 
-  <project path="vendor/cyanogen" name="CyanogenMod/android_vendor_cyanogen" />
+  <project path="vendor/cyanogen" name="kghost/android_vendor_cyanogen" />
   <project path="vendor/qcom/opensource/webkit" name="CyanogenMod/android_vendor_qcom_opensource_webkit" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
