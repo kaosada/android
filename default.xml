@@ -34,6 +34,7 @@
   <project path="device/samsung/toro" name="CyanogenMod/android_device_samsung_toro" />
   <project path="device/samsung/tuna" name="CyanogenMod/android_device_samsung_tuna" />
   <project path="device/ti/panda" name="device/ti/panda" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
+  <project path="device/hisense/e910" name="kghost/android_device_hisense_e910" />
   <project path="external/android-mock" name="platform/external/android-mock" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
   <project path="external/antlr" name="platform/external/antlr" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
   <project path="external/apache-harmony" name="platform/external/apache-harmony" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
@@ -183,7 +184,7 @@
   <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" />
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" />
-  <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" />
+  <project path="hardware/ril" name="kghost/android_hardware_ril" />
   <project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" />
   <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
